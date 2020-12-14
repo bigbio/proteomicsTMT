@@ -205,8 +205,8 @@ if (workflow.profile.contains('awsbatch')) {
 
 
 // Stage config files
-//ch_output_docs = file("$baseDir/docs/output.md", checkIfExists: true)
-//ch_output_docs_images = file("$baseDir/docs/images/", checkIfExists: true)
+ch_output_docs = file("$baseDir/docs/output.md", checkIfExists: true)
+ch_output_docs_images = file("$baseDir/docs/images/", checkIfExists: true)
 
 // Validate input
 if (isCollectionOrArray(params.input))
